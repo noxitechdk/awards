@@ -1,8 +1,8 @@
 name: awards
 description: Awards system til BedRock SMP
 authors:
-  - NoXi
-  - NoXiTech
+  - Codz.dk
+  - NoXiTech.dk
 version: '1.0-SNAPSHOT'
 main: dk.noxitech.awards.Main
 api-version: '1.21'
