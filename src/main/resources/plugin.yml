@@ -1,0 +1,32 @@
+name: awards
+description: Awards system til BedRock SMP
+authors:
+  - NoXi
+  - NoXiTech
+version: '1.0-SNAPSHOT'
+main: dk.noxitech.awards.Main
+api-version: '1.21'
+depend: [Vault]
+
+commands:
+  playtime:
+    description: Se din eller andres spilletid
+    usage: /playtime [spiller]
+  resetplaytime:
+    description: Nulstil spilletid
+    usage: /resetplaytime [spiller]
+    permission: awards.admin
+  notifications:
+    description: Administrer dine award notifikationer
+    usage: /notifications [toggle]
+  awards:
+    description: Se dine awards og progress
+    usage: /awards
+  awardssettings:
+    description: Administrer awards indstillinger
+    usage: /awardssettings [toggle hover|toggle items]
+    permissions: awards.admin
+
+awards.admin:
+  description: Tillader at ændre awards indstillinger
+  default: op
