@@ -15,7 +15,7 @@ public class NotificationsCommand implements CommandExecutor {
     public NotificationsCommand(JavaPlugin plugin, DatabaseManager database) {
         this.database = database;
         this.prefix = ChatColor.translateAlternateColorCodes('&',
-            plugin.getConfig().getString("prefix", "&8[&6Awards&8]"));
+            plugin.getConfig().getString("Core.prefix", "&8[&6Awards&8]"));
     }
 
     @Override

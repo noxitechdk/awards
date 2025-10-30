@@ -27,7 +27,7 @@ public class AwardsCommand implements CommandExecutor {
         this.awardManager = awardManager;
         this.plugin = plugin;
         this.prefix = ChatColor.translateAlternateColorCodes('&',
-            plugin.getConfig().getString("prefix", "&8[&6Awards&8]"));
+            plugin.getConfig().getString("Core.prefix", "&8[&6Awards&8]"));
     }
 
     @Override

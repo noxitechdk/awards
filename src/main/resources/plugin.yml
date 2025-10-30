@@ -1,12 +1,12 @@
 name: awards
-description: Awards system til BedRock SMP
+description: Awards system baseret på spilletid
 authors:
-  - Codz.dk
   - NoXiTech.dk
 version: '1.0-SNAPSHOT'
 main: dk.noxitech.awards.Main
 api-version: '1.21'
-depend: [Vault]
+soft-dependencies:
+  - Vault
 
 commands:
   playtime:

@@ -34,9 +34,21 @@ Et avanceret awards system til Minecraft servere, der belønner spillere baseret
    - [Vault](https://www.spigotmc.org/resources/vault.34315/)
    - Et economy plugin (f.eks. EssentialsX)
 4. **Genstart** serveren
-5. **Konfigurer** `config.yml` efter behov
+5. **Tilføj licens nøgle** i `config.yml`:
+   ```yaml
+   Core:
+     license: "din-licens-nøgle-her"
+   ```
+6. **Konfigurer** `config.yml` efter behov
 
 ## ⚙️ Konfiguration
+
+### Licens og Core Setup
+```yaml
+Core:
+  prefix: "&8[&6Awards&8]"
+  license: "din-licens-nøgle-her"  # PÅKRÆVET
+```
 
 ### Database Setup
 ```yaml
@@ -133,12 +145,15 @@ Award 4: 🔒 Låst (unlock award 3 først) ($20000)
 ### Dependencies
 - **Paper/Spigot** 1.21+
 - **Vault** (economy integration)
+- **LicenseGate** (licens verificering)
 - **Gson** (JSON håndtering)
 - **MySQL Connector** (hvis MySQL bruges)
 
 ## 🐛 Troubleshooting
 
 ### Plugin loader ikke
+- **Licens fejl**: Tjek at korrekt licens nøgle er indsat i config.yml
+- **IP verificering**: Plugin verificerer server IP - kontakt support hvis problemer
 - Tjek at Vault er installeret
 - Verificer at economy plugin er aktivt
 - Se server logs for fejl beskeder
@@ -161,3 +176,5 @@ Award 4: 🔒 Låst (unlock award 3 først) ($20000)
 - ✅ Hover funktionalitet
 - ✅ JSON-baseret progress tracking
 - ✅ "Both" award type support
+- ✅ LicenseGate licens system
+- ✅ IP-baseret server verificering

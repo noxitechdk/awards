@@ -1,4 +1,6 @@
-prefix: "&8[&6Awards&8]"
+Core:
+  prefix: "&8[&6Awards&8]"
+  license: "" # Indsæt din licensnøgle her
 
 hover:
   enabled: true
